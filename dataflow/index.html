@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>GeoEngineers</title>
+	<meta name="description" content="We Need a Dam Sensor Reading">
+	<meta name="author" content="Blair Deaver - Smartmine@GeoEngineers ">
+	<meta name="deck" content="reveal.js by Hakim el Hattab (@hakimel)">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/adobe-theme.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+
+	<script src="//use.edgefonts.net/bangers.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+
+    <meta charset="utf-8">
+
+
+</head>
+
+<body>
+
+
+	<div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+
+    <section>
+      	<h1>We need a Dam Sensor Reading<span class="no-break"></span></h1><br>
+				<p><span class="no-break">Blair Deaver - GeoEngineers</span></p>
+				<p><span class="no-break">Data Flow - 2016</span></p><br>
+        <a href="http://www.geoengineers.com" ><img src="resources/geo_logo_full.svg"  alt="" /></a>
+    </section>
+
+		<section>
+			<h2>GeoEngineers</h2>
+			<img src="resources/tmpImagesGeo.png"  alt="" />
+			<p>Earth Science and Technology</p>
+			<p>Trusted advisors to clients who manage natural resources and the built environment.</p>
+			<br>
+	</section>
+
+	<section>
+		<h2>Our Locations</h2>
+		<img src="resources/tmpGeoLocationMap.png"  alt="" />
+			<p>Team of nearly 350 employees</p>
+</section>
+
+<section>
+	<h2>Local Presence</h2>
+	<img src="resources/br_projects.png"  alt="" />
+	<p>Earth Science and Technology</p>
+</section>
+
+<section>
+	<table class="tg">
+	  <tr>
+	    <th class="tg-yw4l"><img src="resources/home_scrrenshot.png" alt="" /></th>
+	    <th class="tg-yw4l"><img src="resources/whales_wired.png" alt="" /></th>
+	    <th class="tg-yw4l"><img src="resources/avian_audit.png" alt="" /></th>
+	  </tr>
+	</table>
+	<br>
+   <p>Geospatial | Products | Solutions | Visualizations </p>
+</section>
+
+<section>
+	<h2>AGENDA</h2><br>
+					<ul>
+						<li>Background</li>
+						<li>Instrumentation</li>
+						<li>Data Rich | Information Poor</li>
+						<li>Earth Analytics</li>
+						<li>Case Study: PGE</li>
+						<li>IoT | Infrastructure | Constraints</li>
+					</ul>
+</section>
+
+<section data-state='blendingbg'>
+       <h1>BACKGROUND</h1>
+</section>
+
+  <section data-state="blendingbg">
+      <h3>Over 8,000 Dams Throughout the US</h3>
+      <img src="resources/dam_map1.png" alt="" />
+			<p>5,000 + dams were built prior to 1970.</p>
+  </section>
+
+ <section data-state="blendingbg">
+	 <h3>Common Causes for Dam Failure</h3>
+	 		<p>	Sub-standard construction	</p>
+			<p>	Geologic instability </p>
+			<p>	Poor Maintenance </p>
+			<p>	Internal Erosion - earth dams </p>
+			<p>	Extreme Info </p>
+			<p> And more ... </p>
+	</section>
+
+	 <section data-state="blendingbg">
+      <img src="https://upload.wikimedia.org/wikipedia/en/7/71/Teton_Dam_Sequence_13.jpg" alt="" />
+			<p>Teton Dam, Idaho | 6-5-1976</p>
+  </section>
+
+	<section data-state="blendingbg">
+			 <img src="https://c3.staticflickr.com/1/37/86883394_a582b72fac.jpg" alt="" />
+			 <p>Taum Sauk, Missouri | 12-14-2005</p>
+	 </section>
+
+	 <section data-state="blendingbg">
+		<h3>Inspection and Compliance</h3>
+			 <p>Dependent on Use Type</p>
+			 <p>Local | State | Federal </p>
+	 </section>
+
+	 <section data-state="blendingbg">
+		<h3>Visual Inspections Are Important</h3>
+			  <img src="resources/visualinspection.png" alt="" />
+				 <p>Source: FERC Training Series </p>
+	 </section>
+
+	 <section data-state="blendingbg">
+				<img src="resources/crackindam.png" alt="" />
+				 <p>Source: FERC Training Series </p>
+	 </section>
+
+   <section data-state='blendingbg'>
+       <h1>Focus on Utilities</h1>
+    </section>
+
+		<section data-state="blendingbg">
+		 <h3>US Hydro Dams</h3>
+				 <img src="resources/hydrodams.png" alt="" />
+		</section>
+
+  	<section data-state="blendingbg">
+			<img src="resources/ferc_seal.png" alt="" />
+        <p>Issuance of licenses for new and existing dam projects</p>
+				<p>Oversight of all ongoing project operations, including dam safety inspections and environmental monitoring</p>
+	</section>
+
+	<section data-state="blendingbg">
+		<h3>Inspection Review Cycle</h3>
+			 <img src="resources/figure1_2.jpg" alt="" />
+			 <p>Regular Inspections & Instrumentation Deployment</p>
+	</section>
+
+	<section data-state="blendingbg">
+		<h3>Data Rich</h3>
+			 <img src="resources/ferc_report.001.png" alt="" />
+			 <p>Safety Survelience Program</p>
+	</section>
+
+	<section data-state="blendingbg">
+		<h3>Information Poor</h3>
+			 <img src="resources/datar.png" alt="" />
+			 <p>High latency between events: data collection | analysis | reporting</p>
+	</section>
+
+	<section data-state="blendingbg">
+	 <h1>Instruments</h1>
+	</section>
+
+<section data-state="blendingbg">
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"><img src="resources/piezo-vw-3-types.jpg" alt="" /></th>
+    <th class="tg-yw4l"><img src="resources/10-382.png" alt="" /></th>
+    <th class="tg-yw4l"><img src="resources/10-6061.png" alt="" /></th>
+  </tr>
+  <tr>
+    <td>Piezometer Sensors</td>
+    <td>Strain Gauge Sensors</td>
+    <td>Atmospheric Sensors</td>
+  </tr>
+</table>
+	</section>
+
+	<section data-state="blendingbg">
+		<h3>Traditional Data Loggers</h3>
+		<img src="resources/Vibrating-Wire-Mini-Logger-Main.jpg" alt="" />
+		<p>More common</p>
+		<p>Download data via laptop</p>
+		</section>
+
+		<section data-state="blendingbg">
+			<h3>Autonomous Data Loggers {IoT}</h3>
+			<img src="https://in-situ.com/wp-content/uploads/2015/03/TROLL_Link-1024x768.jpg" alt="" />
+			<p>Transmission of data via cell, wifi, satcom</p>
+			<p>Reduced latency</p>
+		</section>
+
+			<section data-background-transition="zoom">
+				<h3>We need to live with both</h3>
+				<div class="animations"><img alt="" width="100%" height="100%" src="resources/shaq.gif"> </div>
+				<p>Support for both traditional DL and new IoT technology</p>
+				</section>
+
+
+   <section data-state='blendingbg'>
+       <h1>Earth Analytics</h1>
+    </section>
+
+    <section data-state="blendingbg">
+      <h3>Whale Application</h3>
+    <a href="http://whales.smartmine.com/" target="_blank">
+      <img src="resources/whales_wired.png" alt="" />
+    </a>
+
+  </section>
+
+    <section data-state="blendingbg">
+      <h3>Buy Bend</h3>
+    <a href="http://localhost:1337/" target="_blank">
+      <img src="resources/bendsales.png" alt="" />
+        <p>Visualize Bend Taxlot Sales</p>
+        <p>Deschutes County Open Data</p>
+    </a>
+  </section>
+
+
+    <section>
+      <h1>end</h1>
+      <h2>
+
+      </h2>
+    </section>
+
+
+
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/CSSShapesEditor.js"></script>
+
+	<script>
+
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: false,
+			progress: true,
+			history: true,
+			center: true,
+			rollingLinks: false,
+
+			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+
+	</script>
+
+	<script>
+		(function(){
+			var colorBlendingSolid = document.querySelector('#blending-solid');
+			var mockOverlay = document.querySelector('#blending-comparison .mock-overlay');
+			var blendedSolid = document.querySelector('#blending-comparison figure.solid.blended');
+			colorBlendingSolid.addEventListener('change', function(e){
+				var color = e.target.value;
+				blendedSolid.style.backgroundColor = color;
+				mockOverlay.style.backgroundColor = color;
+				mockOverlay.style.opacity = '0.7';
+			})
+		})();
+
+		(function(){
+				var clipEditor;
+
+				document.addEventListener('click', function(e){
+					if (e.target.dataset && e.target.dataset.jsClipTrigger){
+						var target = e.target;
+						var value = window.getComputedStyle(target).webkitClipPath;
+						var output = document.querySelector(e.target.dataset.jsClipOutput);
+
+						clipEditor = new CSSShapesEditor(target, value);
+
+						// force editor container to zoom in tune with the slides
+						clipEditor.on('ready', function(){
+							var slides = document.querySelector('div.slides');
+							var slidesStyle = window.getComputedStyle(slides);
+							var editorContainer = document.querySelector('[data-role="shape-editor"]');
+							editorContainer.style.zoom = slidesStyle.zoom;
+
+						});
+
+
+						clipEditor.on('shapechange', function(){
+							var outVal = clipEditor.getCSSValue();
+							target.style.webkitClipPath = outVal;
+							output.textContent = outVal;
+						})
+					}
+				});
+
+				document.addEventListener('keydown', function(e){
+					// pressing X will close the editor
+					if (e.keyCode == 88 && clipEditor){
+						clipEditor.off('shapechange');
+						clipEditor.remove();
+						clipEditor = null;
+					}
+				})
+		})()
+	</script>
+
+        </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/CSSShapesEditor.js"></script>
+
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: false,
+            progress: true,
+            history: true,
+            center: true,
+            rollingLinks: false,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+
+    <script>
+        (function(){
+            var colorBlendingSolid = document.querySelector('#blending-solid');
+            var mockOverlay = document.querySelector('#blending-comparison .mock-overlay');
+            var blendedSolid = document.querySelector('#blending-comparison figure.solid.blended');
+            colorBlendingSolid.addEventListener('change', function(e){
+                var color = e.target.value;
+                blendedSolid.style.backgroundColor = color;
+                mockOverlay.style.backgroundColor = color;
+                mockOverlay.style.opacity = '0.7';
+            })
+        })();
+
+        (function(){
+                var clipEditor;
+
+                document.addEventListener('click', function(e){
+                    if (e.target.dataset && e.target.dataset.jsClipTrigger){
+                        var target = e.target;
+                        var value = window.getComputedStyle(target).webkitClipPath;
+                        var output = document.querySelector(e.target.dataset.jsClipOutput);
+
+                        clipEditor = new CSSShapesEditor(target, value);
+
+                        // force editor container to zoom in tune with the slides
+                        clipEditor.on('ready', function(){
+                            var slides = document.querySelector('div.slides');
+                            var slidesStyle = window.getComputedStyle(slides);
+                            var editorContainer = document.querySelector('[data-role="shape-editor"]');
+                            editorContainer.style.zoom = slidesStyle.zoom;
+
+                        });
+
+
+                        clipEditor.on('shapechange', function(){
+                            var outVal = clipEditor.getCSSValue();
+                            target.style.webkitClipPath = outVal;
+                            output.textContent = outVal;
+                        })
+                    }
+                });
+
+                document.addEventListener('keydown', function(e){
+                    // pressing X will close the editor
+                    if (e.keyCode == 88 && clipEditor){
+                        clipEditor.off('shapechange');
+                        clipEditor.remove();
+                        clipEditor = null;
+                    }
+                })
+        })()
+    </script>
+
+</body>
+</html>
